@@ -1,0 +1,160 @@
+.root, JFXTreeTableView, AnchorPane, JFXTreeTableColumn, SplitPane {
+    -fx-background-color: #232323;
+    -fx-border-color: #232323;
+    -fx-base: #232323;
+    -fx-text-fill: #007bff;
+}
+
+/* cells in tree table */
+.tree-table-row-cell {
+    -fx-background-color: #454545; /* table cel background */
+    -fx-font-size: 22pt; /* table cell font size */
+}
+
+/* item in tree table focused */
+.jfx-tree-table-view:focused .tree-table-row-cell:selected .tree-table-cell,
+.jfx-tree-table-view:focused > .virtual-flow > .clipped-container > .sheet > .tree-table-row-cell:filled:selected {
+    -fx-text-fill: #007bff;
+    -fx-background-color: #232323;
+}
+
+/* item in tree table not focused */
+.jfx-tree-table-view .tree-table-row-cell:selected .tree-table-cell,
+.jfx-tree-table-view > .virtual-flow > .clipped-container > .sheet > .tree-table-row-cell:filled:selected {
+    -fx-text-fill: #007bff;
+    -fx-background-color: #232323;
+}
+
+.jfx-tree-table-view .tree-table-row-cell .tree-table-cell HBox  {
+    -fx-padding: 16 0 16 0;
+}
+
+.jfx-tree-table-view .tree-table-row-cell:selected  .tree-table-cell HBox Label{
+    -fx-text-fill: #007bff;
+    -fx-background-color: #232323;
+}
+
+/* tree table header */
+.jfx-tree-table-view .column-header {
+    -jfx-header-color: #007bff; /* font color in header */
+    -fx-border-color: #007bff; /* separator color in header */
+    -fx-border-insets: 7 0 7 0;
+    -fx-font-size: 14pt; /* table header font size */
+}
+
+/* tree table header background color */
+.jfx-tree-table-view .column-header-background {
+    -fx-border-color: #232323;
+    -fx-background-color: #232323;
+}
+
+/* text field */
+.jfx-text-field {
+    -jfx-focus-color: #007bff;
+    -jfx-unfocus-color: #4d4d4d;
+    -fx-text-fill: #8C8C8C;
+}
+
+/* toggle button */
+.jfx-toggle-button {
+    -jfx-toggle-color: #007bff;
+    -jfx-untoggle-color: #4d4d4d;
+}
+
+/* button */
+.jfx-button {
+    -fx-background-color: #007bff;
+}
+
+/* button hover */
+.jfx-button:hover {
+    -fx-background-color: #3ea6ff;
+}
+
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #232323;
+}
+
+.jfx-tab-pane .headers-region .tab-selected-line {
+    -fx-background-color: #007bff;
+}
+
+.jfx-tab-pane .headers-region .tab .tab-container .tab-label {
+    -fx-text-fill: #8C8C8C;
+    -fx-font-weight: normal;
+    -fx-padding: 6 10 6 10;
+    -fx-font-size: 12;
+}
+
+.jfx-slider {
+    -jfx-default-thumb: #007bff;
+}
+
+.jfx-drawer-side-pane {
+    -fx-background-color: rgba(35, 35, 35, 0.9);
+}
+
+.jfx-drawer-overlay-pane {
+    -fx-background-color: transparent;
+}
+
+.jfx-hamburger {
+    -fx-background-color: #007bff;
+    -fx-background-radius: 3px;
+
+}
+
+.jfx-hamburger:hover {
+    -fx-background-color: #3ea6ff;
+}
+
+.jfx-hamburger StackPane {
+    -fx-background-color: white;
+}
+
+.jfx-snackbar-content {
+    -fx-background-color: rgba(0, 123, 255, 0.8);
+    -fx-background-radius: 3px 3px 0 0;
+
+}
+
+.jfx-snackbar-toast {
+    -fx-text-alignment: center;
+    -fx-line-spacing: 0.2em;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.26), 5, 0.06, -1, 2);
+}
+
+/* progress bar in tree table */
+.jfx-tree-table-view .tree-table-row-cell .jfx-progress-bar > .bar,
+.jfx-tree-table-view .tree-table-row-cell .progress-bar > .bar {
+    -fx-background-color: #232323;
+    /*-fx-pref-height: 16px;*/
+}
+
+.jfx-progress-bar > .track,
+.jfx-progress-bar > .bar,
+.progress-bar > .track,
+.progress-bar > .bar {
+    -fx-background-radius: 4px;
+    -fx-background-insets: 4px;
+}
+
+.jfx-tree-table-view .tree-table-row-cell:selected .jfx-progress-bar > .bar,
+.jfx-tree-table-view .tree-table-row-cell:selected .progress-bar > .bar {
+    -fx-background-color: #007bff;
+}
+
+/* text area */
+.jfx-text-area {
+    -fx-text-fill: #007bff;
+    -fx-font-size: 16pt;
+    -fx-padding: 10px;
+}
+
+.jfx-text-area .content{
+    -fx-background-color: #232323;
+}
+
+.jfx-text-area .text {
+    -fx-text-alignment: justify;
+}

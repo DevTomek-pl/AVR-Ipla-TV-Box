@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body,
+        html {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            background-color: black;
+        }
+
+        .logo {
+            margin: auto;
+            height: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="logo" src="avr-ipla-tv-box.svg">
+    <script>
+        window.setBrightness = function (value) {
+            let body = document.querySelector('body');
+            body.style.filter = 'brightness(' + value + '%)'
+        }
+    </script>
+</body>
+
+</html>

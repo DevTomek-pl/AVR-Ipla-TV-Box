@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="500.0"
+            xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pl.devtomek.app.avriplatvbox.controller.MainController">
+    <children>
+        <BorderPane layoutX="501.0" layoutY="2.0" prefHeight="418.0" prefWidth="699.0" AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <bottom>
+            </bottom>
+            <center>
+                <AnchorPane prefWidth="500.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <JFXTreeTableView fx:id="playlistView" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                    </children>
+                </AnchorPane>
+            </center>
+            <bottom>
+                <AnchorPane fx:id="bottomAnchorPane" prefHeight="300.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <JFXTextArea fx:id="descriptionTextArea" AnchorPane.bottomAnchor="0.0"
+                                     AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                     AnchorPane.topAnchor="0.0"/>
+                        <Label style="-fx-background-color: #007bff;" AnchorPane.leftAnchor="0.0"
+                               AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <font>
+                                <Font size="1.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </bottom>
+        </BorderPane>
+    </children>
+</AnchorPane>

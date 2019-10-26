@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/task
+                           http://www.springframework.org/schema/task/spring-task.xsd">
+
+    <context:component-scan base-package="pl.devtomek.app"/>
+
+    <bean id="defaultSerialReaderCommand" class="pl.devtomek.app.serial.read.impl.DefaultSerialCommand"/>
+
+    <bean id="defaultSerialWriter" class="pl.devtomek.app.serial.write.impl.DefaultSerialWriter"/>
+
+    <bean id="defaultSerialReader" class="pl.devtomek.app.serial.read.impl.DefaultSerialReader">
+        <constructor-arg ref="defaultSerialReaderCommand"/>
+    </bean>
+
+    <bean id="defaultSerial" class="pl.devtomek.app.serial.DefaultSerial" init-method="initialize">
+        <constructor-arg ref="defaultSerialWriter"/>
+        <constructor-arg ref="defaultSerialReader"/>
+        <constructor-arg ref="defaultSerialReaderCommand"/>
+    </bean>
+
+    <bean id="defaultEpgIplaService" class="pl.devtomek.app.avriplatvbox.service.impl.DefaultEpgIplaService">
+        <constructor-arg ref="defaultSerial"/>
+    </bean>
+
+    <bean id="defaultPlaylistFacade" class="pl.devtomek.app.avriplatvbox.facade.impl.DefaultPlaylistFacade">
+        <constructor-arg ref="defaultEpgIplaService"/>
+    </bean>
+
+    <bean id="defaultSoundService" class="pl.devtomek.app.avriplatvbox.service.impl.DefaultSoundService"
+          init-method="initialize"/>
+
+    <bean id="defaultIplaService" class="pl.devtomek.app.avriplatvbox.service.impl.DefaultIplaService"
+          init-method="initialize">
+        <constructor-arg ref="defaultPlaylistFacade"/>
+    </bean>
+
+    <bean id="mainController" class="pl.devtomek.app.avriplatvbox.controller.MainController">
+        <constructor-arg ref="defaultPlaylistFacade"/>
+        <constructor-arg ref="defaultIplaService"/>
+        <constructor-arg ref="defaultSoundService"/>
+        <constructor-arg ref="defaultSerial"/>
+    </bean>
+
+    <!--Scheduler responsible for updating EPG information every 60 seconds-->
+    <task:scheduler id="updateEpgScheduler"/>
+
+    <task:scheduled-tasks scheduler="updateEpgScheduler">
+        <task:scheduled ref="defaultPlaylistFacade" method="updateEpg" initial-delay="1000" fixed-delay="60000"/>
+    </task:scheduled-tasks>
+
+</beans>

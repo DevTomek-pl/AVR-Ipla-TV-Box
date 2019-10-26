@@ -1,0 +1,15 @@
+### Intellij ###
+.idea/*
+out/*
+.idea_modules/
+*.iml
+modules.xml
+*.ipr
+
+### Java  ###
+*.class
+*.log
+
+### Others ###
+target/
+application.properties

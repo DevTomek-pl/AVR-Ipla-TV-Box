@@ -1,0 +1,186 @@
+{
+  "channels": [
+    {
+      "item": {
+        "name": "DISCOVERY_CHANNEL",
+        "url": "https://www.ipla.tv/kanaly-tv/Discovery-Channel-HD/11399",
+        "icon": "/logo/discovery-channel.png"
+      }
+    },
+    {
+      "item": {
+        "name": "POLSAT_PLAY",
+        "url": "https://www.ipla.tv/kanaly-tv/Polsat-Play-HD/11379",
+        "icon": "/logo/polsat-play.png"
+      }
+    },
+    {
+      "item": {
+        "name": "DISCOVERY_DTX",
+        "url": "https://www.ipla.tv/kanaly-tv/DTX-HD/11401",
+        "icon": "/logo/discovery-dtx.png"
+      }
+    },
+    {
+      "item": {
+        "name": "DISCOVERY_SCIENCE",
+        "url": "https://www.ipla.tv/kanaly-tv/Discovery-Science-HD/11396",
+        "icon": "/logo/discovery-science.png"
+      }
+    },
+    {
+      "item": {
+        "name": "POLSAT_DOKU",
+        "url": "https://www.ipla.tv/kanaly-tv/Polsat-Doku/13302",
+        "icon": "/logo/polsat-doku.png"
+      }
+    },
+    {
+      "item": {
+        "name": "DISCOVERY_HISTORIA",
+        "url": "https://www.ipla.tv/kanaly-tv/Discovery-Historia/11316",
+        "icon": "/logo/discovery-historia.png"
+      }
+    },
+    {
+      "item": {
+        "name": "DISCOVERY_LIFE",
+        "url": "https://www.ipla.tv/kanaly-tv/Discovery-Life-HD/11315",
+        "icon": "/logo/discovery-life.png"
+      }
+    },
+    {
+      "item": {
+        "name": "HISTORY",
+        "url": "https://www.ipla.tv/kanaly-tv/History-HD/11437",
+        "icon": "/logo/history.png"
+      }
+    },
+    {
+      "item": {
+        "name": "HISTORY_2",
+        "url": "https://www.ipla.tv/kanaly-tv/History2-HD/11387",
+        "icon": "/logo/history-2.png"
+      }
+    },
+    {
+      "item": {
+        "name": "NATIONAL_GEOGRAPHIC",
+        "url": "https://www.ipla.tv/kanaly-tv/National-Geographic/11307",
+        "icon": "/logo/national-geographic.png"
+      }
+    },
+    {
+      "item": {
+        "name": "NATIONAL_GEOGRAPHIC_WILD",
+        "url": "https://www.ipla.tv/kanaly-tv/National-Geographic-Wild/11308",
+        "icon": "/logo/national-geographic-wild.png"
+      }
+    },
+    {
+      "item": {
+        "name": "VIASAT_HISTORY",
+        "url": "https://www.ipla.tv/kanaly-tv/Viasat-History-HD/6013",
+        "icon": "/logo/viasat-history.png"
+      }
+    },
+    {
+      "item": {
+        "name": "VIASAT_NATURE",
+        "url": "https://www.ipla.tv/kanaly-tv/Viasat-Nature-HD/6014",
+        "icon": "/logo/viasat-nature.png"
+      }
+    },
+    {
+      "item": {
+        "name": "VIASAT_EXPLORE",
+        "url": "https://www.ipla.tv/kanaly-tv/Viasat-Explore-HD/6015",
+        "icon": "/logo/viasat-explore.png"
+      }
+    },
+    {
+      "item": {
+        "name": "CRIME_INVESTION_POLSAT",
+        "url": "https://www.ipla.tv/kanaly-tv/CI-Polsat-HD/11306",
+        "icon": "/logo/crime-investion-polsat.png"
+      }
+    },
+    {
+      "item": {
+        "name": "TRAVEL_CHANNEL",
+        "url": "https://www.ipla.tv/kanaly-tv/Travel-Channel-HD/11393",
+        "icon": "/logo/travel-channel.png"
+      }
+    },
+    {
+      "item": {
+        "name": "ANIMAL_PLANET",
+        "url": "https://www.ipla.tv/kanaly-tv/Animal-Planet-HD/11394",
+        "icon": "/logo/animal-planet.png"
+      }
+    },
+    {
+      "item": {
+        "name": "TLC",
+        "url": "https://www.ipla.tv/kanaly-tv/TLC-HD/11391",
+        "icon": "/logo/tlc.png"
+      }
+    },
+    {
+      "item": {
+        "name": "INVESTIGATION_DISCOVERY",
+        "url": "https://www.ipla.tv/kanaly-tv/ID-HD/11375",
+        "icon": "/logo/investigation-discovery.png"
+      }
+    },
+    {
+      "item": {
+        "name": "WATER_PLANET",
+        "url": "https://www.ipla.tv/kanaly-tv/Water-Planet/11286",
+        "icon": "/logo/water-planet.png"
+      }
+    },
+    {
+      "item": {
+        "name": "POLSAT_2",
+        "url": "https://www.ipla.tv/kanaly-tv/POLSAT-2-HD/10258",
+        "icon": "/logo/polsat-2.png"
+      }
+    },
+    {
+      "item": {
+        "name": "POLSAT_CAFE",
+        "url": "https://www.ipla.tv/kanaly-tv/Polsat-Cafe-HD/11441",
+        "icon": "/logo/polsat-cafe.png"
+      }
+    },
+    {
+      "item": {
+        "name": "BBC_LIFESTYLE",
+        "url": "https://www.ipla.tv/kanaly-tv/BBC-Lifestyle-HD/13349",
+        "icon": "/logo/bbc-lifestyle.png"
+      }
+    },
+    {
+      "item": {
+        "name": "BBC_EARTH",
+        "url": "https://www.ipla.tv/kanaly-tv/BBC-EARTH/13332",
+        "icon": "/logo/bbc-earth.png"
+      }
+    },
+    {
+      "item": {
+        "name": "BBC_BRIT",
+        "url": "https://www.ipla.tv/kanaly-tv/BBC-BRIT/13333",
+        "icon": "/logo/bbc-brit.png"
+      }
+    },
+    {
+      "item": {
+        "name": "LIFETIME",
+        "url": "https://www.ipla.tv/kanaly-tv/Lifetime-HD/11376",
+        "icon": "/logo/lifetime.png"
+      }
+    }
+  ]
+}
